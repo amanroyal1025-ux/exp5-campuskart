@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusKart</title>
+  <!-- Tailwind CSS (already added for you) -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-emerald-50 text-slate-900">
+
+    <!-- TODO Build It 3: Navigation Bar
+       Add classes to <nav>, <h1> and the <div> of links -->
+
+   <nav class="bg-emerald-950 text-white px-6 py-4 flex justify-between items-center">
+
+    <h1 class="text-2xl font-bold">
+      Campus<span class="text-amber-400">Kart</span>
+    </h1>
+
+    <div class="flex gap-6">
+      <a href="#products" class="hover:text-amber-400">
+        Shop
+      </a>
+
+      <a href="#cart" class="hover:text-amber-400">
+        Cart (0)
+      </a>
+    </div>
+
+  </nav>
+
+  <!-- TODO Build It 5: Responsive Sale Banner
+       Add classes to <section>, <h2>, <p> and <img>.
+       Remember: text-center on phone, md:text-left and md:justify-between on laptop -->
+
+
+    <section class="bg-emerald-600 text-white px-6 py-8 md:py-8 flex flex-col md:flex-row md:justify-between md:items-center text-center md:text-left bg-[url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655')] bg-cover bg-center">
+
+    <div>
+
+      <h2 class="text-4xl font-bold">
+        College Sale
+      </h2>
+
+      <p class="mt-2">
+        Up to 50% off on bags, books and more
+      </p>
+
+
+   <!-- TODO Build It 5: style this link like the Add to Cart button,
+           but in amber: bg-amber-400 hover:bg-amber-300 text-indigo-950
+           (add "inline-block mt-6" too) -->
+      <a
+        href="#products"
+        class="inline-block mt-4 bg-amber-400 hover:bg-amber-300 text-indigo-950 font-bold px-5 py-2 rounded-lg"
+      >
+        Shop Now
+      </a>
+
+    </div>
+
+
+    <img
+      src="https://placehold.co/300x300/fbbf24/1e1b4b?text=50%25+OFF"
+      alt="Sale"
+      class="w-32 h-32 md:w-32 md:h-32 object-cover rounded-lg mt-6 md:mt-0 mx-auto md:mx-0"
+    >
+
+  </section>
+
+
+   <!-- GIVEN: Why Shop With Us (already styled, nothing to do) -->
+
+  <section class="grid grid-cols-3 gap-2 md:gap-4 text-center px-3 md:px-6 py-4 md:py-6">
+    <div class="bg-white p-3 md:p-4 rounded-lg shadow-sm">
+      <p class="text-xl md:text-2xl font-bold text-emerald-600">
+        Free
+      </p>
+
+      <p class="text-slate-500 text-sm md:text-base">
+        Delivery
+      </p>
+    </div>
+
+
+    <div class="bg-white p-3 md:p-4 rounded-lg shadow-sm">
+      <p class="text-xl md:text-2xl font-bold text-emerald-600">
+        7-Day
+      </p>
+      <p class="text-slate-500 text-sm md:text-base">
+        Returns
+      </p>
+    </div>
+
+
+    <div class="bg-white p-3 md:p-4 rounded-lg shadow-sm">
+      <p class="text-xl md:text-2xl font-bold text-emerald-600">
+        COD
+      </p>
+      <p class="text-slate-500 text-sm md:text-base">
+        Available
+      </p>
+    </div>
+
+  </section>
+
+
+    <!-- TODO Build It 4: Responsive Product Grid
+       Add classes to this <section> -->
+
+  <section
+    id="products"
+    class="px-3 md:px-6 py-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
+  >
+
+    <!-- TODO Build It 1 + 2: Product Card
+         Style this FIRST card: <div>, <img>, <h3>, <p>, <span>, <button>.
+         Then copy the same classes to the other 3 cards. -->
+
+    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+
+      <img
+        src="https://placehold.co/400x300/e0e7ff/4338ca?text=Backpack"
+        alt="Backpack"
+        class="w-full h-32 md:h-40 object-cover"
+      >
+
+      <div class="p-3">
+
+        <h3 class="text-lg font-bold text-indigo-950">
+          Backpack
+        </h3>
+
+        <p class="mt-1 font-semibold text-emerald-600">
+          Rs. 799
+          <span class="ml-1 text-sm text-slate-500 line-through">
+            Rs. 1299
+          </span>
+        </p>
+
+        <button
+          class="mt-3 w-full bg-emerald-600 hover:bg-emerald-500 text-white py-2 rounded-lg font-semibold"
+        >
+          Add to Cart
+        </button>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+
+      <img
+        src="https://placehold.co/400x300/e0e7ff/4338ca?text=Notebooks"
+        alt="Notebooks"
+        class="w-full h-32 md:h-40 object-cover"
+      >
+
+      <div class="p-3">
+
+        <h3 class="text-lg font-bold text-indigo-950">
+          Notebook Set
+        </h3>
+
+        <p class="mt-1 font-semibold text-emerald-600">
+          Rs. 199
+          <span class="ml-1 text-sm text-slate-500 line-through">
+            Rs. 299
+          </span>
+        </p>
+
+        <button
+          class="mt-3 w-full bg-emerald-600 hover:bg-emerald-500 text-white py-2 rounded-lg font-semibold"
+        >
+          Add to Cart
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+
+      <img
+        src="https://placehold.co/400x300/e0e7ff/4338ca?text=Bottle"
+        alt="Bottle"
+        class="w-full h-32 md:h-40 object-cover"
+      >
+
+      <div class="p-3">
+
+        <h3 class="text-lg font-bold text-indigo-950">
+          Bottle
+        </h3>
+
+        <p class="mt-1 font-semibold text-emerald-600">
+          Rs. 349
+          <span class="ml-1 text-sm text-slate-500 line-through">
+            Rs. 499
+          </span>
+        </p>
+
+        <button
+          class="mt-3 w-full bg-emerald-600 hover:bg-emerald-500 text-white py-2 rounded-lg font-semibold"
+        >
+          Add to Cart
+        </button>
+
+      </div>
+
+    </div>
+
+
+    
+    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+
+      <img
+        src="https://placehold.co/400x300/e0e7ff/4338ca?text=Earphones"
+        alt="Earphones"
+        class="w-full h-32 md:h-40 object-cover"
+      >
+
+      <div class="p-3">
+
+        <h3 class="text-lg font-bold text-indigo-950">
+          Earphones
+        </h3>
+
+        <p class="mt-1 font-semibold text-emerald-600">
+          Rs. 599
+          <span class="ml-1 text-sm text-slate-500 line-through">
+            Rs. 999
+          </span>
+        </p>
+
+        <button
+          class="mt-3 w-full bg-emerald-600 hover:bg-emerald-500 text-white py-2 rounded-lg font-semibold"
+        >
+          Add to Cart
+        </button>
+
+      </div>
+
+    </div>
+
+
+
+
+    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+
+      <img
+        src="https://placehold.co/400x300/e0e7ff/4338ca?text=Calculator"
+        alt="Calculator"
+        class="w-full h-32 md:h-40 object-cover"
+      >
+      <div class="p-3">
+
+        <h3 class="text-lg font-bold text-indigo-950">
+          Scientific Calculator
+        </h3>
+
+        <p class="mt-1 font-semibold text-emerald-600">
+          Rs. 499
+          <span class="ml-1 text-sm text-slate-500 line-through">
+            Rs. 699
+          </span>
+        </p>
+
+        <button
+          class="mt-3 w-full bg-emerald-600 hover:bg-emerald-500 text-white py-2 rounded-lg font-semibold"
+        >
+          Add to Cart
+        </button>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+
+      <img
+        src="https://placehold.co/400x300/e0e7ff/4338ca?text=Pen+Set"
+        alt="Pen Set"
+        class="w-full h-32 md:h-40 object-cover"
+      >
+
+      <div class="p-3">
+
+        <h3 class="text-lg font-bold text-indigo-950">
+          Premium Pen Set
+        </h3>
+
+        <p class="mt-1 font-semibold text-emerald-600">
+          Rs. 149
+          <span class="ml-1 text-sm text-slate-500 line-through">
+            Rs. 249
+          </span>
+        </p>
+
+        <button
+          class="mt-3 w-full bg-emerald-600 hover:bg-emerald-500 text-white py-2 rounded-lg font-semibold"
+        >
+          Add to Cart
+        </button>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+
+      <img
+        src="https://placehold.co/400x300/e0e7ff/4338ca?text=Laptop+Stand"
+        alt="Laptop Stand"
+        class="w-full h-32 md:h-40 object-cover"
+      >
+
+      <div class="p-3">
+
+        <h3 class="text-lg font-bold text-indigo-950">
+          Laptop Stand
+        </h3>
+
+        <p class="mt-1 font-semibold text-emerald-600">
+          Rs. 899
+          <span class="ml-1 text-sm text-slate-500 line-through">
+            Rs. 1199
+          </span>
+        </p>
+
+        <button
+          class="mt-3 w-full bg-emerald-600 hover:bg-emerald-500 text-white py-2 rounded-lg font-semibold"
+        >
+          Add to Cart
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+
+      <img
+        src="https://placehold.co/400x300/e0e7ff/4338ca?text=Hoodie"
+        alt="College Hoodie"
+        class="w-full h-32 md:h-40 object-cover"
+      >
+
+      <div class="p-3">
+
+        <h3 class="text-lg font-bold text-indigo-950">
+          College Hoodie
+        </h3>
+
+        <p class="mt-1 font-semibold text-emerald-600">
+          Rs. 999
+          <span class="ml-1 text-sm text-slate-500 line-through">
+            Rs. 1499
+          </span>
+        </p>
+
+        <button
+          class="mt-3 w-full bg-emerald-600 hover:bg-emerald-500 text-white py-2 rounded-lg font-semibold"
+        >
+          Add to Cart
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- GIVEN: Footer (already styled, nothing to do) -->
+  <footer class="bg-indigo-950 text-indigo-200 py-5 text-center">
+
+    <p>&copy; 2026 CampusKart</p>
+    <div class="flex justify-center gap-6 mt-2">
+    <a href="#" class="hover:text-amber-400">About</a>
+    <a href="#" class="hover:text-amber-400">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>
